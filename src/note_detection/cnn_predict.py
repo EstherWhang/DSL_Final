@@ -13,11 +13,12 @@ import pretty_midi as pm
 import os, os.path
 import re
 
-model_path = "/mnt/d/Workspace/EE379K/DSL_Final/models/ckpt.h5"
-image_path = "/mnt/d/Workspace/EE379K/data/spectrograms"
+#change this to work with your file
+model_path = "models/ckpt.h5"
+image_path = "data/spectrograms"
 #image_file = "daylight_41.jpg"
 
-midi_path = "/mnt/d/Workspace/EE379K/data/split_midi/daylight_41.mid"
+midi_path = "data/split_midi/daylight_41.mid"
 midi = pm.PrettyMIDI(midi_path)
 
 one_hot = utils.pretty_midi_to_one_hot(midi)

@@ -16,7 +16,7 @@ features = notes_oh + velocity
 
 matrix = np.ndarray(shape=(ticks, features))
 df = pd.DataFrame(data, column=header)
-print matrix.shape
+print(matrix.shape)
 
 # Range for 88 key piano is note 21..108
 A_1 = 21
